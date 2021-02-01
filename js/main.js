@@ -10,11 +10,7 @@ let selectCharacter = ( character ) => {
     teamTwo.push( character );
     document.getElementById( character ).className = "selectedTwo" ;
     document.getElementById( character ).onclick = "";
-  
   };
-  
-  console.log(teamOne);
-  console.log(teamTwo);
   
 };
 

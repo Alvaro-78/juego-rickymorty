@@ -15,5 +15,5 @@ class Character {
 
   specialHit ( enemy ) {
     enemy.health -= ( this.strong + 5 - this.defense . enemy.luc );
-  }
-}
+  };
+};
