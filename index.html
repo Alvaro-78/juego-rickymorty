@@ -3,22 +3,31 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <title>Ricn and Morty Rumble</title>
+  <link href="https://fonts.googleapis.com/css2?family=Creepster&display=swap" rel="stylesheet">    
   <link href="./assets/css/style.css" rel="stylesheet">
 </head>
 <body>
+  <div class="welcomeMessage">
+    Welcome to Rick and Morty Rumble
+  </div>
   <div class="container">
-    <div class="topContainer">
-      <div class="characters" id="beth" onclick="selectCharacter('beth')"><img class="characterPic" src="./assets/images/Beth_Smith .png"></div>
-      <div class="characters" id="hormigas" onclick="selectCharacter('hormigas')"><img class="characterPic" src="./assets/images/Hormigas_en_los_ojos.png"></div>
-      <div class="characters" id="jerry" onclick="selectCharacter('jerry')"><img class="characterPic" src="./assets/images/jerry.png"></div>
-      <div class="characters" id="meeseeks" onclick="selectCharacter('meeseeks')"><img class="characterPic" src="./assets/images/Meeseeks.png"></div>
+    <div class="charContainer">
+      <div id="beth" onclick="selectCharacter('beth')"><img class="characterPic" src="./assets/images/Beth_Smith .png"></div>
+      <div id="hormigas" onclick="selectCharacter('hormigas')"><img class="characterPic" src="./assets/images/Hormigas_en_los_ojos.png"></div>
+      <div id="jerry" onclick="selectCharacter('jerry')"><img class="characterPic" src="./assets/images/jerry.png"></div>
+      <div id="meeseeks" onclick="selectCharacter('meeseeks')"><img class="characterPic" src="./assets/images/Meeseeks.png"></div>
+      <div id="morty" onclick="selectCharacter('morty')"><img class="characterPic" src="./assets/images/Morty.jpeg"></div>
+      <div id="rick_pepinillo" onclick="selectCharacter('rick_pepinillo')"><img class="characterPic" src="./assets/images/rick_pepinillo.jpeg"></div>
+      <div id="rick" onclick="selectCharacter('rick')"><img class="characterPic" src="./assets/images/rick.jpeg"></div>
+      <div id="summer" onclick="selectCharacter('summer')"><img class="characterPic" src="./assets/images/summer_smith.png"></div>
     </div>
-    <div class="downContainer">
-      <div class="characters" id="morty" onclick="selectCharacter('morty')"><img class="characterPic" src="./assets/images/Morty.jpeg"></div>
-      <div class="characters" id="rick_pepinillo" onclick="selectCharacter('rick_pepinillo')"><img class="characterPic" src="./assets/images/rick_pepinillo.jpeg"></div>
-      <div class="characters" id="rick" onclick="selectCharacter('rick')"><img class="characterPic" src="./assets/images/rick.jpeg"></div>
-      <div class="characters" id="summer" onclick="selectCharacter('summer')"><img class="characterPic" src="./assets/images/summer_smith.png"></div>
+    <div class="choosePlayer">
+      Choose One Player
+    </div>
+    <div class="messageTeams">
+      <div id="messageTeamOne"></div>
+      <div id="messageTeamTwo"></div>
     </div>
   </div>
   <script src="js/main.js"></script>
