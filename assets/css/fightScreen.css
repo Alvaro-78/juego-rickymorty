@@ -1,9 +1,10 @@
+
 .containerFight {
   display: flex;
   align-items: center;
   justify-content: center;
   width: 100%;
-  height: 100%;
+  height: 40em;
   background-image: url(../images/fightScreen.jpg);
   background-position: center;  
   background-repeat: no-repeat;
@@ -13,7 +14,10 @@
 }
 
 .messageRumbleCamp {
-  width: 20em;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
   height: 2em;
   font-size: 2em;
 }
