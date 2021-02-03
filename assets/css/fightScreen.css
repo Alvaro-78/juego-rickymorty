@@ -21,3 +21,10 @@
   height: 2em;
   font-size: 2em;
 }
+
+.fightersCombat {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}

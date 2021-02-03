@@ -1,5 +1,5 @@
 ## Rick and Morty Fight Game 
-![rickymorty](./assets/images/portada.jpeg)
+![rickymorty](./assets/images/portada.jpg)
 
 
 
@@ -14,5 +14,16 @@ Game made it with love plus Javascript Vanilla, HTML5 and CSS3
 
 ## Navigation
 
+- [Fighters](#fighters)
 - [System requeriments](#system-requeriments)
 - [How to Play](how-to-play)
+
+## Fighters
+- Beth Smith
+- Ants at the Eyes  
+- Jerry Smith
+- Meeseeks 
+- Morty Smith
+- Pinckle Rick
+- Rick Sanchez
+- Summer Smith
