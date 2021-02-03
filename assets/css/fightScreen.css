@@ -1,0 +1,19 @@
+.containerFight {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  background-image: url(../images/fightScreen.jpg);
+  background-position: center;  
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+
+}
+
+.messageRumbleCamp {
+  width: 20em;
+  height: 2em;
+  font-size: 2em;
+}
