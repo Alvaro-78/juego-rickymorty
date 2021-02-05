@@ -20,7 +20,6 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
-  
 }
 
 .welcomeMessage {
@@ -95,30 +94,12 @@ img {
 
 .team2 {
   display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
   margin-right: 5em;
-}
-
-#playerOne {
-  margin: .5em;
-}
-#playerTwo {
-  margin: .5em;
-}
-#playerThree {
-  margin: .5em;
-}
-#playerFour {
-  margin: .5em;
-}
-#playerFive {
-
-  margin: .5em;
-}
-#playerSix {
-  margin: .5em;
 }
 
 .vs {
   font-size: 5em;
 }
-

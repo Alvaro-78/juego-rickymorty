@@ -36,39 +36,42 @@
         </div>        
       </div>
       <div class="teams">
-        <div class="team1">
-          <div id="playerOne"></div>
-          <div id="playerTwo"></div>
-          <div id="playerThree"></div>
+        <div class="team1" id="team1">
         </div>
         <div class="vs">
           VS
         </div>
-        <div class="team2">
-          <div id="playerFour"></div>
-          <div id="playerFive"></div>
-          <div id="playerSix"></div>
+        <div class="team2" id="team2">
         </div>
       </div>
     </div>
 
     <div class="containerFight" id="screenFight" style="display: none;">
-      <div class="messageRumbleCamp">
-        Welcome to Rumble Camp
+      <div class="rumbleCampHead">
+        <div class="messageTeam1">
+          Team One 
+        </div>
+        <div class="messageRumbleCamp">
+         Welcome to Rumble Camp 
+        </div>
+        <div class="messageTeam2">
+          Team Two
+        </div>
       </div>
         <div class="fightersCombat">
-          <div class="teamBattle1">
-            <div id="charOne"></div>
-            <div id="charTwo"></div>
-            <div id="charThree"></div>
+          <div class="teamBattle1" id="teamBattle1">
           </div>
-          <div class="teamBattle2">
-            <div id="charFour"></div>
-            <div id="charFive"></div>
-            <div id="charSix"></div>
+          <div class="teamBattle2" id="teamBattle2">
           </div>
         </div>
+        <div class="battleOneByOne">
+          <div class="p1"></div>
+          <div class="vsBattleCamp">
+            VS
+          </div>
 
+          <div class="p2"></div>
+        </div>
         <div class="hit">
           <div id="strike" class="attack" onclick="attack()"></div>
         </div>
@@ -76,6 +79,5 @@
     </div>
 
   <script src="js/main.js"></script>
-  <script src="js/character.js"></script>
 </body>
 </html>
