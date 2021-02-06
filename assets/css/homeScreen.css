@@ -5,6 +5,12 @@ body {
   align-items: center;
   justify-content: center;
   font-family: Creepster;
+  background-image: url(../images/fondo.jpg);
+  background-position: center;  
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+
 }
 
 .containerHome {
@@ -12,14 +18,7 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  width: 100%;
-  height: 60em;
   padding-top: 2em;
-  background-image: url(../images/fondo.jpg);
-  background-position: center;  
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-attachment: fixed;
 }
 
 .welcomeMessage {
@@ -28,6 +27,11 @@ body {
   justify-content: center;
   height: 2em;
   font-size: 3em;
+}
+
+.names {
+  width: 10em;
+  height: 2em;
 }
 
 @media screen and (max-width: 1000px) {  
@@ -41,12 +45,13 @@ body {
   flex-direction: row;
   align-items: center;
   justify-content: center;
-  margin-top: 2em;
+  cursor: pointer;
+  height: 15em;
 }
 
 img {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
   width: 5em;
@@ -54,21 +59,24 @@ img {
   margin:  .5em;
 }
 
-
-.choosePlayer {
+.chooseContainer {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  width: 60em;
+}
+
+.choosePlayer {
   font-size: 1.5em;
-  margin-top: 1em;
+  margin: 1em 1em 1em;
 }
 
 .firstTeam {
-  margin-left: 6em;
+  margin-left: 2em;
 }
 
 .secondTeam {
-  margin-right: 6em;
+  margin-right: 2em;
 }
 
 .selectedOne {
@@ -84,12 +92,13 @@ img {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  width: 60em;
   height: 10em;
 }
 
 .team1 {
   display: flex;
-  margin-left: 5em;
+  margin-left: 2em;
 }
 
 .team2 {
@@ -97,9 +106,10 @@ img {
   flex-direction: row;
   align-items: center;
   justify-content: center;
-  margin-right: 5em;
+  margin-right: 2em;
 }
 
 .vs {
   font-size: 5em;
+  padding-bottom: 1em;
 }

@@ -10,11 +10,12 @@
   <link href="./assets/css/fightScreen.css" rel="stylesheet">
 </head>
 <body>
-    <div class="containerHome" id="screenHome" style="display: block;">
+    <div class="containerHome" id="screenHome" style="display: flex;">
       <div class="welcomeMessage">
         Welcome to Rick and Morty Rumble
       </div>
       <div class="charContainer">
+        <div class="names">Beth </div>
         <div class="characterPic" id="beth" onclick="selectCharacter('beth')"><img src="./assets/images/beth.jpg"></div>
         <div class="characterPic" id="hormigas_en_los_ojos" onclick="selectCharacter('hormigas_en_los_ojos')"><img src="./assets/images/hormigas_en_los_ojos.jpg"></div>
         <div class="characterPic" id="jerry" onclick="selectCharacter('jerry')"><img src="./assets/images/jerry.jpg"></div>
@@ -24,15 +25,15 @@
         <div class="characterPic" id="rick" onclick="selectCharacter('rick')"><img src="./assets/images/rick.jpg"></div>
         <div class="characterPic" id="summer" onclick="selectCharacter('summer')"><img src="./assets/images/summer.jpg"></div>
       </div>
-      <div class="choosePlayer">
+      <div class="chooseContainer">
         <div class="firstTeam">
-          Team One
+          Player One
         </div>
         <div class="choosePlayer">
           Choose Three Characters  
         </div> 
         <div class="secondTeam">
-          Team Two
+          Player Two
         </div>        
       </div>
       <div class="teams">
@@ -49,13 +50,13 @@
     <div class="containerFight" id="screenFight" style="display: none;">
       <div class="rumbleCampHead">
         <div class="messageTeam1">
-          Team One 
+          Player One 
         </div>
         <div class="messageRumbleCamp">
          Welcome to Rumble Camp 
         </div>
         <div class="messageTeam2">
-          Team Two
+          Player Two
         </div>
       </div>
         <div class="fightersCombat">
@@ -64,16 +65,14 @@
           <div class="teamBattle2" id="teamBattle2">
           </div>
         </div>
-        <div class="battleOneByOne">
           <div class="p1"></div>
           <div class="vsBattleCamp">
             VS
           </div>
 
           <div class="p2"></div>
-        </div>
         <div class="hit">
-          <div id="strike" class="attack" onclick="attack()"></div>
+          <button id="strike" class="attack" onclick="attack()">Start Fight</button>>
         </div>
       </div>
     </div>
