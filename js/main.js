@@ -10,11 +10,11 @@ class Character {
   };
 
   hit ( enemy ) {
-    enemy.health -= ( this.strength - enemy.defense) - this.luck;
+    enemy.health -= ( this.strength - enemy.defense / 1.5) + this.luck;
   };
 
   specialHit ( enemy ) {
-    enemy.health -= ( this.strength + ( this.strength / 3 ) - enemy.defense ) - enemy.luck;
+    enemy.health -= ( this.strength + ( this.strength / 4 ) - enemy.defense ) - enemy.luck;
   };
 
   defense ( enemy ) {
@@ -23,23 +23,14 @@ class Character {
 
 };
 
-// let restartGame = () => {
-
-//   let initialHealth = 200;
-  
-//   player1.health = initialHealth;
-//   player2.health = initialHealth;
-
-// };
-
-let player1 = new Character("beth", 400, 50, 20, 6);
-let player2 = new Character("hormigas_en_los_ojos", 400, 40, 30, 5);
-let player3 = new Character("jerry", 400, 35, 15, 7);
-let player4 = new Character("meeseeks", 450, 40, 30, 5);
-let player5 = new Character("morty", 400, 60,25, 7);
-let player6 = new Character("rick_pepinillo", 400, 60, 40, 8);
-let player7 = new Character("rick", 400, 50, 20, 5);
-let player8 = new Character( "summer", 400, 35, 30, 7);
+let player1 = new Character("beth", 800, 30, 20, 6);
+let player2 = new Character("hormigas_en_los_ojos", 800, 20, 30, 5);
+let player3 = new Character("jerry", 800, 35, 15, 7);
+let player4 = new Character("meeseeks", 850, 20, 30, 5);
+let player5 = new Character("morty", 800, 60,25, 7);
+let player6 = new Character("rick_pepinillo", 800, 30, 40, 8);
+let player7 = new Character("rick", 800, 20, 20, 5);
+let player8 = new Character( "summer", 800, 35, 30, 7);
 
 let p1 = '';
 let p2 = '';
@@ -136,10 +127,16 @@ console.log(p1.health, p2.health)
       if(special == 3){
         console.log("SPECIAAAAAL")
           p1.specialHit( p2 );
+
+        }else{
+          console.log("ataque")
+          p1.hit( p2 );
+          p1.health = 0;
           
-      }else{
-        console.log("ataque")
-        p1.hit( p2 );
+          let message = document.getElementById("teamBattle1");
+          message.innerHTML = `Estas muerto`;
+          onclick = "";
+
       };
   }else{
       if(special == 3){
@@ -147,11 +144,17 @@ console.log(p1.health, p2.health)
 
       }else{
         p2.hit( p1 );
+        p2.health = 0;
+
+        let message = document.getElementById("teamBattle2");
+        message.innerHTML = `Estas muerto`;
+        onclick = "";
 
       };
+    
   };
 
-  console.log( p1.name ,':', + p1.health );
-  console.log( p2.name ,':', + p2.health );
-  
+  console.log( p1.name ,':', + Math.floor(p1.health) );
+  console.log( p2.name ,':', + Math.floor(p2.health) );
+
 };
