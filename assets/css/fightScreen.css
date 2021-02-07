@@ -21,11 +21,15 @@
 
 .messageRumbleCamp {
   display: flex;
-  flex-direction: row;
   align-items: center;
   justify-content: center;
-  height: 2em;
-  font-size: 2em;
+  background-color: rgb(154,239,149);
+  border: 10px solid black;
+  border-radius: 25px;
+  width: 18em;
+  height: 1.5em;
+  font-size: 3em;
+  margin-top: .5em;
 }
 
 .messagePlayer1 {
@@ -34,10 +38,11 @@
   align-items: center;
   justify-content: center;
   width: 5em;
-  background-color: azure;
+  background-color: rgb(154,239,149);
+  border: 5px solid black;
   border-radius: 25px ;
   font-size: 1.5em;
-  margin-top: 5em;
+  margin-top: 6em;
   margin-left: 4em;
 }
 
@@ -46,11 +51,12 @@
   flex-direction: row;
   align-items: center;
   justify-content: center;
-  background-color: azure;
+  background-color:rgb(154,239,149);
   border-radius: 25px ;
+  border: 5px solid black;
   width: 5em;
   font-size: 1.5em;
-  margin-top: 5em;
+  margin-top: 6em;
   margin-right: 4em;
 }
 
@@ -59,7 +65,7 @@
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
-  height:10em;
+  height:15em;
   margin-left: 6em;
   margin-right: 6em;
 }
@@ -90,9 +96,13 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 6em;
-  margin-bottom: .5em;
+  width: 1em;
+  font-size: 5em;
+  background-color:rgb(154,239,149);
+  border: 5px solid black;
+  border-radius: 25px ;
 }
+
 
 .attack {
   display: flex;
@@ -103,7 +113,9 @@
   border-radius: 10px;
   width: 6em;
   height: 2em;
-  background-color: white;
+  background-color:rgb(154,239,149);
+  border-radius: 25px ;
+  border: 5px solid black;
 }
 
 .hit {
@@ -112,5 +124,16 @@
   align-items: center;
   justify-content: center;
   height: 6em;
+}
 
+.playerCombat1 {
+  background-color:rgb(154,239,149);
+  border-radius: 25px ;
+  border: 5px solid black;
+}
+
+.playerCombat2 {
+  background-color:rgb(154,239,149);
+  border-radius: 25px ;
+  border: 5px solid black;
 }

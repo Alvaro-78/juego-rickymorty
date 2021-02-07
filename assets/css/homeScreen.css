@@ -10,7 +10,6 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
-
 }
 
 .containerHome {
@@ -25,11 +24,16 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 2em;
+  background-color: rgb(154,239,149);
+  border: 10px solid black;
+  border-radius: 25px;
+  width: 18em;
+  height: 1.5em;
   font-size: 3em;
 }
 
 .names {
+  margin-top: .5em;
   width: 10em;
   height: 2em;
 }
@@ -46,8 +50,12 @@ body {
   align-items: center;
   justify-content: center;
   cursor: pointer;
-  width: 100%;
+  width: 74em;
   height: 12em;
+  background-color: rgb(154,239,149);
+  border: 10px solid black;
+  border-radius: 25px ;
+
 }
 
 img {
@@ -55,9 +63,9 @@ img {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  width: 8em;
-  height: 8em;
   margin:  .5em;
+  width: 8em;
+  height: 10em;
 }
 
 .chooseContainer {
@@ -65,6 +73,11 @@ img {
   align-items: center;
   justify-content: space-between;
   width: 60em;
+  height: 4em;
+  background-color: rgb(154,239,149);
+  border: 10px solid black;
+  border-radius: 25px ;
+  margin-top: 1em;
 }
 
 .choosePlayer {
@@ -73,11 +86,26 @@ img {
 }
 
 .firstTeam {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   margin-left: 2em;
+  background-color: rgb(154,239,149);
+  border: 5px solid black;
+  border-radius: 25px ;
+  width: 5em;
 }
 
 .secondTeam {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 5em;
   margin-right: 2em;
+  background-color: rgb(154,239,149);
+  border: 5px solid black;
+  border-radius: 25px ;
 }
 
 .selectedOne {
@@ -111,8 +139,14 @@ img {
 }
 
 .vs {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 1em;
   font-size: 5em;
-  padding-bottom: 1em;
+  background-color:rgb(154,239,149);
+  border: 10px solid black;
+  border-radius: 25px ;
 }
 
 .names {

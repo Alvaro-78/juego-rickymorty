@@ -13,18 +13,18 @@ class Character {
   };
 
   specialHit ( enemy ) {
-    this.health -= ( this.strength + ( this.strength / 3 ) - enemy.defense );
+    this.health -= ( this.strength + ( this.strength * 0.5 ) - enemy.defense );
   };
 
 };
 
-let player1 = new Character("beth", 400, 30, 20);
-let player2 = new Character("hormigas_en_los_ojos", 400, 20, 30);
-let player3 = new Character("jerry", 400, 35, 15);
-let player4 = new Character("meeseeks", 400, 20, 30);
+let player1 = new Character("beth", 300, 30, 20);
+let player2 = new Character("hormigas", 350, 20, 30);
+let player3 = new Character("jerry", 250, 35, 15);
+let player4 = new Character("meeseeks", 300, 20, 30);
 let player5 = new Character("morty", 400, 60,25);
-let player6 = new Character("rick_pepinillo", 400, 30, 40);
-let player7 = new Character("rick", 400, 20, 20);
+let player6 = new Character("pickle", 400, 30, 40);
+let player7 = new Character("rick", 350, 20, 20);
 let player8 = new Character( "summer", 400, 35, 30);
 
 let p1 = '';
@@ -32,11 +32,11 @@ let p2 = '';
 
 let allPlayers = {
   "beth": player1,
-  "hormigas_en_los_ojos": player2,
+  "hormigas": player2,
   "jerry": player3,
   "meeseeks": player4,
   "morty": player5,
-  "rick_pepinillo": player6,
+  "pickle": player6,
   "rick": player7,
   "summer": player8,
 };
@@ -115,37 +115,26 @@ renderSelectedPlayerTwo = () => {
 let attack = () => {
 
   let turn = Math.floor( Math.random() * 2 );
-  let special = Math.floor( Math.random() * 5 );
+  let special = Math.floor( Math.random() * 10 );
 
   if(turn == 0){
 
-    if(special = 2){
-      p1.specialHit( p2 );
+    p2.hit( p1 );
+    console.log("Hit!! Player 1");
 
-    }else{
-
-      p1.hit( p2 );
-
-    };
-    
+    battleMessage();
   }else{
 
-    if(special = 2){
-        p2.specialHit( p1 );
-
-    }else{
-
-      p2.hit( p1 );
-
-      
-    };
-    
+    p1.hit( p2 );
+    console.log("Hit!! Player 2");
+  
+    battleMessage();
   };
   
-  battleMessage();
 
   console.log( p1.name ,':', + Math.floor(p1.health) );
   console.log( p2.name ,':', + Math.floor(p2.health) );
+
 
 };
 
@@ -167,24 +156,30 @@ let switchScreenHome = (actualStage,futureStage) => {
 battleMessage = () => {
 
   if ( p1.health <= 0 ) {
+
     let messageDeath = document.getElementById("teamBattle1");
     messageDeath.innerHTML = `Estas muerto`;
-
+    
     let messageWin = document.getElementById("teamBattle2");
     messageWin.innerHTML = `Eres el Amo`
+
+    let button = document.getElementById( "strike" ).onclick = "";
 
   }else if( p2.health <= 0){
 
     let messageDeath = document.getElementById("teamBattle2");
     messageDeath.innerHTML = `Estas muerto`;
+
     
     let messageWin = document.getElementById("teamBattle1");
     messageWin.innerHTML = `Eres el Amo`;
 
-    resolveIn(2000).then(delay => {
+    let button = document.getElementById( "strike" ).onclick = "";
+
+    // resolveIn(2000).then(delay => {
   
-      switchScreenHome("screenHome","screenFight");
+    //   switchScreenHome("screenHome","screenFight");
       
-    });
+    // });
   };
 };
