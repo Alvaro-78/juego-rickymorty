@@ -10,7 +10,7 @@
   <link href="./assets/css/fightScreen.css" rel="stylesheet">
 </head>
 <body>
-  <audio src="./assets/mp3/rick_y_morty_baker_street.mp3" autoplay loop></audio>
+  <!-- <audio src="./assets/mp3/rick_y_morty_baker_street.mp3" autoplay loop></audio> -->
     <div class="containerHome" id="screenHome" style="display: flex;">
       <div class="welcomeMessage">
         Welcome to Rick and Morty Rumble
@@ -40,8 +40,8 @@
       <div id="teams" class="teams">
         <div class="team1" id="team1">
         </div>
-        <div class="vs">
-          VS
+        <div class="vs" onclick="buttonBattle()">
+          Go To Battle
         </div>
         <div class="team2" id="team2">
         </div>
@@ -75,6 +75,9 @@
         </div>
         <div class="hit">
           <button id="strike" class="attack" onclick="attack()">Start Fight</button>>
+        </div>
+        <div class="backToHome">
+          <button id="backHome" class="attack" onclick="buttonBack()">Click to go Home</button>>
         </div>
       </div>
     </div>

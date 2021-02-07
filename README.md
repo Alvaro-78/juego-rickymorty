@@ -1,4 +1,4 @@
-## Rick and Morty Fight Game 
+## Rick and Morty Rumble
 ![rickymorty](./assets/images/portada.jpg)
 
 
@@ -28,4 +28,11 @@ Game made it with love plus Javascript Vanilla, HTML5 and CSS3
 - Rick Sanchez
 - Summer Smith
 
-##
+## System requeriments
+
+Use in your favourite browser and use headphones !!!
+
+
+## How to play
+
+Open [Rick and Morty Rumble]

@@ -144,8 +144,9 @@ img {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 1em;
-  font-size: 5em;
+  cursor: pointer;
+  width: 3em;
+  font-size: 2em;
   background-color:rgb(154,239,149);
   border: 10px solid black;
   border-radius: 25px ;

@@ -166,3 +166,10 @@
   border-radius: 25px ;
   border: 5px solid black;
 }
+
+.backToHome {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}

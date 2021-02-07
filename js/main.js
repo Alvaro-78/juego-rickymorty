@@ -68,14 +68,18 @@ let selectCharacter = ( character ) => {
 
   };
 
-  resolveIn(3000).then(delay => {
-
-    switchScreenBattleCamp("screenHome","screenFight");
-    
-  });
   
   switchTeamsToBattle();
 }
+
+buttonBattle = () => {
+
+  resolveIn(1000).then(delay => {
+  
+    switchScreenBattleCamp("screenHome","screenFight");
+    
+  });
+};
 
 const resolveIn = delay =>
 new Promise(res => setTimeout(() => res(delay), delay));
@@ -89,6 +93,8 @@ let switchScreenBattleCamp = (actualStage,futureStage) => {
   actualScreen.style.display = "none";
   futureScreen.style.display = "block";
 };
+
+
 
 switchTeamsToBattle = () => {
 
@@ -144,13 +150,29 @@ let attack = () => {
 
     p2.innerHTML = `${p2.health = 0}`;
 
-  }
+    do {
+  
+  
+    }while ( p2.health = 0 );
+  };
+   
 
   console.log( p1.name ,':', + Math.floor(p1.health) );
   console.log( p2.name ,':', + Math.floor(p2.health) );
 
 
 };
+
+let buttonBack = () => {
+
+  resolveIn(1000).then(delay => {
+    
+    switchScreenHome("screenHome","screenFight");
+      
+  });
+
+};
+
 
 
 let switchScreenHome = (actualStage,futureStage) => {
@@ -163,9 +185,11 @@ let switchScreenHome = (actualStage,futureStage) => {
   actualScreen.style.display = "block";
   futureScreen.style.display = "none";
   
-  window.location.reload()
+  window.location.reload();
+
   
 };
+
 
 battleMessage = () => {
 
@@ -177,7 +201,7 @@ battleMessage = () => {
     let messageWin = document.getElementById("teamBattle2");
     messageWin.innerHTML = `Eres el Amo`
 
-    let button = document.getElementById( "strike" ).onclick = "";
+    document.getElementById( "strike" ).onclick = "";
 
   }else if( p2.health <= 0){
 
@@ -187,12 +211,8 @@ battleMessage = () => {
     let messageWin = document.getElementById("teamBattle1");
     messageWin.innerHTML = `Eres el Amo`;
 
-    let button = document.getElementById( "strike" ).onclick = "";
+    document.getElementById( "strike" ).onclick = "";
 
-    resolveIn(2000).then(delay => {
-  
-      switchScreenHome("screenHome","screenFight");
-      
-    });
   };
+
 };
