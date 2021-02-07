@@ -115,22 +115,36 @@ renderSelectedPlayerTwo = () => {
 let attack = () => {
 
   let turn = Math.floor( Math.random() * 2 );
-  let special = Math.floor( Math.random() * 10 );
+  let healthP1 = document.getElementById("p1Health");
+  let healthP2 = document.getElementById("p2Health");
+  healthP1.innerHTML = `${p1.health}`;
+  healthP2.innerHTML = `${p2.health}`;
 
   if(turn == 0){
 
     p2.hit( p1 );
+    healthP1.innerHTML = `${p1.health}`;
     console.log("Hit!! Player 1");
 
     battleMessage();
   }else{
 
     p1.hit( p2 );
+    healthP2.innerHTML = `${p2.health}`;
     console.log("Hit!! Player 2");
   
     battleMessage();
   };
-  
+
+  if( p1.health <= 0 ) {
+
+    healthP1.innerHTML = `${p1.health = 0}`;
+
+  }else if( p2.health <= 0 ) {
+
+    p2.innerHTML = `${p2.health = 0}`;
+
+  }
 
   console.log( p1.name ,':', + Math.floor(p1.health) );
   console.log( p2.name ,':', + Math.floor(p2.health) );
@@ -169,17 +183,16 @@ battleMessage = () => {
 
     let messageDeath = document.getElementById("teamBattle2");
     messageDeath.innerHTML = `Estas muerto`;
-
     
     let messageWin = document.getElementById("teamBattle1");
     messageWin.innerHTML = `Eres el Amo`;
 
     let button = document.getElementById( "strike" ).onclick = "";
 
-    // resolveIn(2000).then(delay => {
+    resolveIn(2000).then(delay => {
   
-    //   switchScreenHome("screenHome","screenFight");
+      switchScreenHome("screenHome","screenFight");
       
-    // });
+    });
   };
 };

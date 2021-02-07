@@ -33,6 +33,8 @@ body {
 }
 
 .names {
+  display: flex;
+  justify-content: space-evenly;
   margin-top: .5em;
   width: 10em;
   height: 2em;

@@ -27,3 +27,5 @@ Game made it with love plus Javascript Vanilla, HTML5 and CSS3
 - Pinckle Rick
 - Rick Sanchez
 - Summer Smith
+
+##
