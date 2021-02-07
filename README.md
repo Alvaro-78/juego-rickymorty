@@ -16,7 +16,8 @@ Game made it with love plus Javascript Vanilla, HTML5 and CSS3
 
 - [Fighters](#fighters)
 - [System requeriments](#system-requeriments)
-- [How to Play](how-to-play)
+- [How to Play](#how-to-play)
+- [Special thanks](#special-thanks)
 
 ## Fighters
 - Beth Smith
@@ -35,4 +36,9 @@ Use in your favourite browser and use headphones !!!
 
 ## How to play
 
-Open [Rick and Morty Rumble]
+Open Link [Rick and Morty Rumble](https://alvaro-78.github.io/juego-rickymorty/),
+select two players, then click on the "go to battle" button, the screen will change to "rumble camp", click on the "Start Fight" button, each click will be an attack turn in which one player will attack and the other You will only receive the blow, the first player to lose life will lose, to restart the game click on the "To Go Home" button.
+
+## Special thanks
+
+I want to thank everyone who has participated in the meet for the collaboration
